@@ -2,12 +2,12 @@ import React from "react";
 
 function Header(props) {
     return (
-        <div className="header">
-            <div className="title">{props.children}</div>
-            <div className="scores">
-                Score: {props.score} Top Score: {props.topscore} 
+        <nav className="navbar navbar-inverse">
+            <div className="navbar-header">
+                <p className="navbar-brand">{props.children}</p>
             </div>
-        </div>
+            <p className="navbar-text">Score: {props.score} Top Score: {props.topscore}</p>
+        </nav>
     )
 }
 
